@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UnitConverter</string>
+    <string name="choose_category">Choose Category</string>
+</resources>

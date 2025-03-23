@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Conversion Type:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/choose_category"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/choose_category"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/choose_category"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/input_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter value to convert"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/convert_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textStyle="bold"
+            android:backgroundTint="#5E35B1"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result: "
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="8dp"/>
+    </LinearLayout>
+</ScrollView>
